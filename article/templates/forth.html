@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <title>ایران کیل</title>
+  <link rel="shortcut icon" href="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-qualitaetsbohrer.png" type="image/png">
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="https://kit.fontawesome.com/1574c3b1bc.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  {% load static %}
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+</head>
+
+<body onload="initialize()">
+
+    <nav class="menu-container">
+      <input type="checkbox" aria-label="Toggle menu" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="admin">
+              ورود
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a  href="{% url 'aboutus' %}">
+            درباره ی ما
+            </a>
+          </li>
+          <li>
+            <a  href="{% url 'article' %}">
+              مقاله ها
+            </a>
+          </li>
+          <li>
+            <a  href="">
+              سرویس ها
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'keil' %}">
+              سیستم ها
+            </a>
+          </li>
+          <li>
+            <a href="">
+              محصولات
+            </a>
+          </li>
+          <li>
+            <a href="../">
+              خانه
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="menu-logo">
+        <img src="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-befestigungstechnik.png" alt="Iran keil"/>
+      </a>
+    </nav>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+سیستم نماهای غیر نمایان جز امن ترین روش های اجرای نماهای ساختمانی می باشد که امروزه مورد توجه معماران و طراحان قرار گرفته است. نماهای غیر نمایان دارای زیرگروه های کیل، شیاری و پیمی می باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">کلمات کلیدی</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">key words</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+نمای خشک – مزایا نمای خشک – روش اجرا نمای خشک – تعریف نمای خشک – روش اجرا کیل – نمای خشک چیست – انواع نمای خشک
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">نمای غیر نمایان </h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">invisible</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+نمای غیر نمایان (invisible)  یکی از روش های اجرای نماهای خشک ساختمان می باشد. نمای غیر نمایان به روش های چون شیاری ( شیار از پشت – شیار از لبه)، پیمی و کیل اجرا می شود.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+در نماهای غیر نمایان بست ها پس از نصب در نما قابل‌مشاهده نمی‌باشند و این از نظر زیبایی بصری بسیار حائز اهمیت میباشد. تکنولوژی اتصالات این روش ساده و قابل استفاده در ابعاد بزرگ است  و امکان اجرای طرح های  پیچیده را با اجرای یک زیرسازی ساده و اصولی فراهم می کند. پس از ایجاد زیرسازی ، چیدمان پنل ها متناسب با طرح در فرم های متقارن یا نا متقارن صورت می گیرد. در نماهای غیر نمایان پیش از نصب باید تغییراتی بر روی سطح رویه مصالح ایجاد شود که بسته به نوع روش می‌تواند سوراخ یا شیارهای درپشت و لبه های مصالح باشند. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">روش های اجرای  نماهای غیر نمایان</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem"></h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+پیشتر به روش های اجرای نما و دسته بندی های آن اشاره نمودیم که به 2 روش  ملاتی (دوغابی) و خشک دسته بندی می شوند. اجرای نما به روش خشک نیز دارای دو زیرگروه نمایان (visible) و غیرنمایان (invisible)  می باشد، که هر کدام را به تفضیل  مورد بررسی قرار داده ایم .
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+در این قسمت به طور کامل به روش های اجرای نماهای غیرنمایان  میپردازیم که مهم ترین مشخصه بارز آن ها، عدم مشاهده اتصالات در نمای ساختمان هنگام اجرای این روش می باشد، به طوریکه پس از نصب مصالح (سرامیک) از لحاظ بصری هیچ گونه درزی قابل مشاهده نمی باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+نماهای غیر نمایان به 3 روش شیاری، کیل و پیمی  اجرا می شوند که در ادامه به مراحل اجرا و دیگر مشخصات این 3 روش  ومی پردازیم. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">ردیف</th>
+                      <th scope="col">روش اجرا</th>
+                      <th scope="col">مراحل اجرا</th>
+                      <th scope="col">ضخامت و ابعاد سنگ</th>
+                      <th scope="col">وزن زیرسازی</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>روش شیاری</td>
+                      <td>شیار از لبه: نقشه برداری از نما و تهیه نقشه های shopdrawin -  اجرا زیرسازی آهنی عمودی و اجرا زیرسازی نبشی- اجرای شیار سنگ      نصب اسکوپ و سنگ</td>
+                      <td>ضخامت 2، 5/2 سانتی متر</td>
+                      <td>18- 16 کیلوگرم در هر متر مربع</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>روش شیاری</td>
+                      <td>شیار از پشت:  نقشه برداری از نما و تهیه نقشه های shopdrawing -  اجرا زیرسازی آهنی ، نصب براکت های آلومینیومی طبق نقشه و نصب پروفیل های  fix افقی طبق نقشه -  اجراشیار 2طرفه 45درجه پشت سرامیک در محل هایی که کلیپس داخل آن قرار می گیرد -  نصب کلیپس های آلومینیومی و نصب سرامیک روی پروفیل های آلومینیومی افقی</td>
+                      <td>600*600 , 1200*600میلیمتر</td>
+                      <td>15- 12 کیلوگرم در هر متر مربع</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>روش پیمی</td>
+                      <td>نقشه ‌برداری از نما و تهیه نقشه‌ های shopdrawing -  اجرا زیرسازی آهنی عمودی     اجرا زیرسازی نبشی -  سوراخ‌کاری سنگ -   نصب اسکوپ و سنگ</td>
+                      <td>5/2،3 سانتی متر</td>
+                      <td>18-16 کیلوگرم</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>روش کیل</td>
+                      <td>نقشه ‌برداری از نما و تهیه نقشه ‌های shopdrawing -  اجرا زیرسازی آهنی عمودی و افقی -  نصب پروفیل‌های آلومینیومی و اجرا سوراخ‌کاری -  نصب انکر در سنگ و نصب سنگ</td>
+                      <td>5/1 ، 5/2 سانتی متر</td>
+                      <td>زیر سازی آهنی 12-10</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>روش کیل</td>
+                      <td>نقشه ‌برداری از نما و تهیه نقشه ‌های shopdrawing -  اجرا زیرسازی آهنی عمودی و افقی -  نصب پروفیل‌های آلومینیومی و اجرا سوراخ‌کاری -  نصب انکر در سنگ و نصب سنگ</td>
+                      <td>5/1 ، 5/2 سانتی متر</td>
+                      <td>زیر سازی آلومینیومی 6-4</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">مزایا و معایب روش های اجرای غیرنمایان</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem"></h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+    نماهای غیرنمایان دارای ویژگی های برجسته ایی می باشند که باعث برتری این روش  نسبت به روش های اجرا دیگر گشته است.
+مزایای این روش ها به طور کلی و تیتروار عبارتند از:
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row" style="direction:rtl">
+        <div class='col my-2'>
+            <ul style="direction:rtl">
+              <li class="text-justify my-2">بهینه سازی مصرف انرژی</li>
+              <li class="text-justify my-2">ایمنی بالا</li>
+              <li class="text-justify my-2">قابلیت تهویه هوای مطلوب </li>
+              <li class="text-justify my-2">قابل تنظیم و رگلاژ  بودن</li>
+              <li class="text-justify my-2">جذب آب نزدیک به صفر</li>
+              <li class="text-justify my-2">استحکام و نفوذ ناپذیری</li>
+              <li class="text-justify my-2">کاهش انتشار امواج صوتی به محیط</li>
+              <li class="text-justify my-2">هماهنگی رفتار مصالح در مقابل تغییرات دمایی</li>
+              <li class="text-justify my-2">سرعت اجرای بالا و در نتیجه صرفه جویی در زمان</li>
+              <li class="text-justify my-2">قابلیت تنظیم میزان کاری در نمای ساختمان</li>
+              <li class="text-justify my-2">طراحی مهندسی و کاهش پرت مصالح ساختمانی</li>
+              <li class="text-justify my-2">عدم نیاز به سطح زیرین یکپارچه و به‌هم‌پیوسته</li>
+              <li class="text-justify my-2">کاهش وزن ساختمان و انطباق با آیین نامه های زلزله</li>
+              <li class="text-justify my-2">افزایش عمر مفید ساختمان و امکان بازیافت مصالح</li>
+              <li class="text-justify my-2">کاهش وزن ساختمان و انطباق با آیین نامه های زلزله</li>
+              <li class="text-justify my-2">کاهش هزینه های ترمیم و بازسازی و در نتیجه صرفه اقتصادی</li>
+              <li class="text-justify my-2">ایجاد یک عایق حرارتی بسیار خوب و جلوگیری از انتقال حرارت ساختمان به محیط و بالعکس</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+ با توجه به اینکه روش اجرای  نما با سیستم های غیرنمایان روشی نوین  و مدرن می باشد، یکی از معایب آن کمبود نیروهای متخصص و ماهر در زمینه اجرا می باشد ، در بسیاری از منابع این روش ها را از نظر هزینه، روشی گران قیمت معرفی کرده اند که باید اشاره کرد با توجه به کاهش چشمگیر هزینه های جانبی پس از اجرا و در دوره مصرف و همچنین با توجه به دامنه گسترده مزایای این روش، بخصوص از نظر کاهش پرت انرژی ، مصالح و زمان اجرا میتوان گفت نه تنها روشی پرهزینه نمی باشد، بلکه در طول دوره مصرف روشی مقرون به صرفه نیز محسوب می گردد. از سوی دیگر با افزایش روز افزون جعیت شهرنشینی و مصرف بی رویه ی انرژی و توجه نهادهای دخیل در ساخت و ساز به بهینه سازی مصرف انرژی، این روش از جنبه های گوناگون میتواند موثر در این زمینه باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+معماران و طراحان با به کار گیری و استفاده از این روش می توانند گام بزرگی در جهت کاهش مصرف انرژی و کمک به محیط زیست داشته باشند. روش های غیر نمایان عمدتا با مصالحی چون سنگ و سرامیک (پرسلانی- تراکوتا ) قابل اجرا می باشند و  به طور کلی نیاز به تجهیزات جانبی هم چون زیرسازی های قوطی شکل، رانرها، پیم ها، دستگاه شیار زن، دریل، اگریفن، انکر ، واشر، بست ها و ... دارد .
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+در صورت استفاده صحیح و اصولی از این روش میتوان گفت که جز امن ترین روش های اجرای نما ساختمان می باشند، و این مزیت خیلی مهمی خصوصا برای ساختمان های مرتفع مورد توجه طراحان امروزی می باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="triangle my-5">
+    </section>
+
+    <footer class="page-footer font-small mdb-color pt-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <div id="map-canvas"></div>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            {% comment %} <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a href="#!">Keil</a>
+            </p>
+            <p>
+              <a href="#!">Services</a>
+            </p>
+            <p>
+              <a href="#!">Company</a>
+            </p>
+            <p>
+              <a href="#!">Article</a>
+            </p> {% endcomment %}
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">لینک های معتبر</h5>
+            <p>
+              <a href="#!"></a>
+            </p>
+            <p>
+              <a href="#!">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!">Help</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">ارتباط با ما</h5>
+            <p>
+              <i class="fas fa-home mr-3 text-justify" style="direction:rtl"></i> تهران- محله مرزداران- بزرگراه جلال آل احمد- جنب پل آزمایش- کوچه مهدی اول- پلاک 53- واحد 12</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 93</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 99</p>
+            <p>
+              <i class="fas fa-comment mr-3"></i> +98 902 235 5595</p>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left">© 2020 Copyright:
+              <a href="https://gmail.com">
+                <strong>MobinRad</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

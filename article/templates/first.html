@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <title>ایران کیل</title>
+  <link rel="shortcut icon" href="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-qualitaetsbohrer.png" type="image/png">
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="https://kit.fontawesome.com/1574c3b1bc.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  {% load static %}
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+</head>
+
+<body onload="initialize()">
+
+    <nav class="menu-container">
+      <input type="checkbox" aria-label="Toggle menu" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="admin">
+              ورود
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a  href="{% url 'aboutus' %}">
+            درباره ی ما
+            </a>
+          </li>
+          <li>
+            <a  href="{% url 'article' %}">
+              مقاله ها
+            </a>
+          </li>
+          <li>
+            <a  href="">
+              سرویس ها
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'keil' %}">
+              سیستم ها
+            </a>
+          </li>
+          <li>
+            <a href="">
+              محصولات
+            </a>
+          </li>
+          <li>
+            <a href="../">
+              خانه
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="menu-logo">
+        <img src="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-befestigungstechnik.png" alt="Iran keil"/>
+      </a>
+    </nav>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                نمای ساختمان از دیرباز به‌عنوان جز جدایی‌ناپذیر ساختمان‌سازی برای معماران حائز اهمیت بوده است. طراحی‌های خلاقانه در نماهای ساختمانی و انطباق آن با مشخصه‌های زیباشناسی و اصول فنی، باعث پایداری نماهای ساختمانی می‌گردد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">کلمات کلیدی</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">key words</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                نماهای ساختمانی _ تعریف نماهای ساختمان _  طراحی نمای ساختمان _ مشخصه های فنی نمای _  نقش نمای ساختمان 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">گذری بر تعریف نماهای ساختمانی</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">نمای ساختمان چیست؟</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                نمای ساختمان به مفهوم عام خود خارجی‌ترین سطح ساختمان می‌باشد. منظور از نمای ساختمان سطحی از ساختمان است که در معرض دید عموم و در تماس با فضاهای عمومی شهر قرار می‌گیرد. به جهت اینکه  نمای ساختمان اولین آیتم از منظر هر بیننده می‌باشد، از اهمیت ویژه‌ای در بحث طراحی معماری ساختمان برخوردار است.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+نمای یک ساختمان در حقیقت وجه اجتماعی آن ساختمان و زبان دیالوگ و تعامل آن با فضای اطرافش است. نمای ساختمان به‌عنوان جزئی از یک کل به نام فضای شهری می‌باشد که تأثیر آن بر کل شهر جاری ست، بنابراین بهتر است در هنگام انتخاب نمای ساختمان ها توجه لازم را به خرج دهید. به‌طورکلی نمای ساختمان ترکیبی از سه قسمت  نشست ساختمان بر زمین،  بدنه ساختمان و  خط آسمان می‌باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+              نمای ساختمان دارای  دو نقش جداکننده و ارتباط‌دهنده می‌باشد، که به‌عنوان عنصر جداکننده بین انسان و محیط خارج و تهدیدهای آن می‌باشد و از طرفی نقش ارتباط‌دهنده میان درون و بیرون، خصوصی و عمومی را ایفا می‌کند.  
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">طراحی نمای ساختمان </h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">Facade Designe</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+طراحی نمای ساختمان ( Facade Designe ) یکی از مهمترین ارکان معماری ساختمان می باشد که عدم توجه صحیح به آن باعث اغتشاش در چهره شهر خواهد شد. به گفته هارالد دیلمان و همکارانش از هر نمای ساختمان چهار عملکرد حفاظت، ایجاد ارتباط، معرفی وجزیی از یک فضای شهری بودن، انتظار می‌رود. از بارزترین مشخصه های هویت شهر، نمای ساختمان است که باید همگون با نماهای شهری و بافت نما ساختمان های مجاور طراحی شود .به سبب اینکه نمای ساختمان  نمود خارجی هر بنا و سازنده بدنه شهری بوده و در واقع بستر کالبدی شکل دهنده به تصویر ذهنی شهروندان از محیطی است که در آن قرار گرفته اند، طراحی نما از اهمیت بارز و چشمگیری در صنعت ساختمان برخوردار میباشد. در طراحی نما  باید به زیبایی پوسته ی بیرونی ساختمان ، امکان استفاده بهینه از انرژی و جلوگیری از اتلاف آن و ایجاد یک لایه پوسته مقاوم برای بالا بردن عمر ساختمان توجه خاص کرد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                همچنین توجه به المان های مختلفی نظیر اقلیم منطقه مورد نظر ، سبک معماری منطقه ، نحوه معماری ساختمان های مجاور ، ضوابط شهری حاکم در منطقه ، شرایط جغرافیایی و فرهنگی و... از اهمیت خاصی در مبحث طراحی نمای ساختمان برخوردار است. بنابراین هر نمای در شهر نشانه وضعیت اقتصادی و اجتماعی سازنده و نحوه تفکر و نگرش او به مسائل مختلف می باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                نقش نمای تفکیک زندگی خصوصی از فضای شهر است. سیما و زیبائی شناسی نما ابنیه انحصاری و انفرادی نیست، بلکه نماها تعریف کننده فضای خیابان و یا میادین هستند و به همین دلیل طراحی نمای ساختمان از حساسیت و اهمیت  خاصی برخوردار است. طراحی نمای ساختمان مهم ترین نکته ای است که باید به آن توجه ای ویژه داشت زیرا در هنگام وارد شدن به ساختمان اولین چیزی که جلب توجه می کند نمای خارجی ساختمان است. دستیابی به یک طراحی نمای با ابهت در ساختمان، با  تاکید بر عناصر شاخص در نما، به کارگیری صحیح فرم و مصالح در نما، توجه به نکات زیباشناسی در طراحی نما و سایر موارد جانبی قابل دستیابی است. توجه داشته باشید که طراحی نمای بیرونی ساختمان اگر بدرستی انجام شود باعث افزایش کیفیت و درجه مادی ساختمان می شود و علاوه بر این نمای ساختمان اگر زیبا و خاص باشد در ذهن هر بیننده ای به صورت اثری به یاد ماندنی ثبت می گردد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                نما در واقع یک سطح صاف و تخت نیست بلکه آن سطح انتقالی بین فضای داخل و خارج است که با عقب نشستگی و پیش آمدگی، تراس و غیره با فضای داخل مسکن ارتباط پیدا می‌کند. 
+نمای ساختمان باید به‌دنبال خلق یک کلیت هماهنگ به‌وسیله تناسب خوب پنجره ها، بازشوهای در، سایبان و محدوده سقف‌ها،‌ سازه عمودی و افقی، مصالح، رنگ، عناصر تزیینی و... باشد. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                با توجه به اینکه نمای ساختمان در مقابل عوامل جوی شدید قرار دارد در انتخاب مصالح برای نماسازی باید دقت کافی شود تا نمای ساخته شده اولا در مقابل عوامل جوی مقاوم بوده و در ثانی زیبایی لازم را داشته باشد. برای نمای ساختمان می‌توان از مصالح مختلفی مانند انواع سنگ، انواع سرامیک، آجر نما، انواع شیشه ها، انواع سیمانکاری، ، انواع دانه‌های سنگی رنگی با چسب‌های مخصوص یا انواع ورق‌های فلزی کامپوزیت، آلومینیم و… استفاده کرد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">مشخصه های فنی نمای ساختمان </h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">مشخصه های فنی نمای ساختمان به طور کلی و تیتر وار </h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+عایق  حرارتی بودن: انواع متریال نمای ساختمان با توجه به ویژگی های متفاوتی که دارند می توانند عملکردهای متعددی در مصرف یا اتلاف انرژی داشته باشند ، لذا در نمای ساختمان، استفاده از مصالحی که ضریب انتقال حرارتی کمتری دارند، باید مورد توجه قرار گیرد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+عایق صوتی: در صورت طراحی اصولی نما میتواند یک عایق صوتی مناسب باشد و توجه به این خصوصیت در شهرها و مکان های پر ازدحام بسیار حایز اهمیت است.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+پایداری در مقابل زلزله: با توجه به زلزله خیز بودن کشور ما توجه به این آیتم نقش برجسته ایی دارد و این خود شامل مقاومت در برابر ضربه ، مقاومت در برابر جداشدن و افتادن از نما میباشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+مقاومت در برابر یخ زدگی:  نمای ساختمان باید در برابر تغییرات شدید آب و هوایی بخصوص در مناطق سرد و کوهستانی مقاوم باشد.
+استفاده از مصالح مناسب: استفاده از مصالح نامناسب و بی کیفیت موجب تضعیف سیستم ساختمان می شود که می تواند سبب بروز عواملی همچون خوردگی و اکسید شدن ، به وجود آمدن ترک ، شکستگی و از هم گسیختگی اجزای دیوارها شود .
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+قابل اجرا بودن در ساختمان‌های مرتفع: با توجه به پیشرفت هر روزه علم وتکنولوژی و تمایل معماران و سازندگان به ساختن بناهای مرتفع ، قابل اجرا بودن نما در ساختمان های مرتفع امروزه خود یک امتیاز مثبت به شمار میاید.
+انعطاف پذیر بودن : طراحی های هندسی متنوع نیازمند  انعطاف پذیر بودن مصالح کاربردی در نما می باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+مقاومت در برابر آتش سوزی : حریق میتواند آسیب های جانی و مالی وسیعی به بناها وارد کند و در نتیجه توجه به این مورد را سازندگان باید در اولویت های کار خود قرار دهند. به جز شیشه اکثریت متریال های مورد استفاده در نماها همه در مقابل آتش سوزی از مقاومت بالایی برخودار هستند.
+سبک بودن مصالح : وزن مصالح و متریال ها در طراحی های نما و سرعت اجرا دارای اهمیت است.
+حکم رابط :. همانطور که بالا به نقش ارتباط دهنده گی نمای ساختمان اشاره شد، ارتباط بین محیط بیرون و درون توسط نمای ساختمان برقرار می شود.
+زیبایی نما : شاید بتوان گفت از نظر اکثریت مردم و عام آنها اولین چیزی که در هر نما چشم ببیننده را جذب میکند زیبایی آن می باشد. زیبایی جزء جدایی‌ناپذیر هر نما می‌باشد و  همچنین زیبایی نما معرف هنر و کیفیت کار طراح ساختمان نیز می‌باشد.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+قیمت انواع نمای ساختمان: در تعیین قیمت نهایی و تمام شده نما ساختمان عوامل گوناگونی دخیل هستند که توجه به تمام آن ها باعث اجرای یک نما مناسب از تمام جهات و از جهت اقتصادی می باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+سرعت اجرا : با توجه به اینکه طولانی شدن در بهره‌برداری از هر پروژه ساختمانی می‌تواند عامل افزایش هزینه‌ها شود، لذا سرعت در اجرای نما بسیار مؤثر خواهد بود.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+تعمیر و تعویض: اجرای هر نمایی با هر نوع مصالحی  مستثنی از این قاعده نمی باشد و گذر زمان در کنار عوامل دیگر باعث می شود که به مرور برای نگهداری کیفیت نما و حتی افزایش آن نیاز به تعمیر و تعویض به وجود آید.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="triangle my-5">
+    </section>
+
+    <footer class="page-footer font-small mdb-color pt-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <div id="map-canvas"></div>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            {% comment %} <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a href="#!">Keil</a>
+            </p>
+            <p>
+              <a href="#!">Services</a>
+            </p>
+            <p>
+              <a href="#!">Company</a>
+            </p>
+            <p>
+              <a href="#!">Article</a>
+            </p> {% endcomment %}
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">لینک های معتبر</h5>
+            <p>
+              <a href="#!"></a>
+            </p>
+            <p>
+              <a href="#!">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!">Help</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">ارتباط با ما</h5>
+            <p>
+              <i class="fas fa-home mr-3 text-justify" style="direction:rtl"></i> تهران- محله مرزداران- بزرگراه جلال آل احمد- جنب پل آزمایش- کوچه مهدی اول- پلاک 53- واحد 12</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 93</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 99</p>
+            <p>
+              <i class="fas fa-comment mr-3"></i> +98 902 235 5595</p>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left">© 2020 Copyright:
+              <a href="https://gmail.com">
+                <strong>MobinRad</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

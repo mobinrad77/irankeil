@@ -1,0 +1,647 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <title>ایران کیل</title>
+  <link rel="shortcut icon" href="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-qualitaetsbohrer.png" type="image/png">
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="https://kit.fontawesome.com/1574c3b1bc.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  {% load static %}
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+</head>
+
+<body onload="initialize()">
+
+    <nav class="menu-container">
+      <input type="checkbox" aria-label="Toggle menu" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="admin">
+              ورود
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a  href="{% url 'aboutus' %}">
+            درباره ی ما
+            </a>
+          </li>
+          <li>
+            <a  href="{% url 'article' %}">
+              مقاله ها
+            </a>
+          </li>
+          <li>
+            <a  href="">
+              سرویس ها
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'keil' %}">
+              سیستم ها
+            </a>
+          </li>
+          <li>
+            <a href="">
+              محصولات
+            </a>
+          </li>
+          <li>
+            <a href="../">
+              خانه
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="menu-logo">
+        <img src="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-befestigungstechnik.png" alt="Iran keil"/>
+      </a>
+    </nav>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+مصالح نمای ساختمان به عنوان خارجی ترین سطح ساختمان حائز اهمیت می باشند. در انتخاب مصالح نمای ساختمان باید با دقت عمل کرد زیرا این مصالح علاوه بر مقاومت در برابر عوامل جوی، باید جنبه های دیگر را برآورده نمایند.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">کلمات کلیدی</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">key words</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+انواع مصالح نما _ کاربرد مصالح در نما _ مزایای مصالح نما _ مصالح نمای ساختمان _ مزایا و معایب مصالح_ 
+گذری بر تعریف انواع مصالح نمای ساختمان
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">تعریف مصالح نمای ساختمان</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem"></h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+نمای ساختمان به عنوان اولین سطحی که در هر ساختمان ببینده مشاهده می کند و با آن روبرو است بسیار دارای اهمیت می باشد. یکی از اجزای  مهم در هر نما که در انتخاب آن باید بسیار دقت نمود ، مصالح نما می باشد ، زیرا که این مصالح  نما باید در مقابل تمام عوامل جوی و محیطی پایداری لازم را داشته و نیز جنبه های زیبایی بصری نما را نیز برآورده نماید.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+مصالح نما ارتباط مستقیمی دارد با حسی که از نما به بیننده القا می شود و عواملی چون اقلیم منطقه ، عملکرد ساختمان ، محیط و ساختمان های اطراف بنا، مصالح موجود و در دسترس، دانش و مهارت نیروی انسانی، مسائل اقتصادی ، نظر و سلیقه شخصی طراح و ... همه در انتخاب نوع مصالح مورد استفاده تاثیر گذار است. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">انواع مصالح نمای ساختمان</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem"></h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+با توجه به رشد روز افزون جمعیت  و در کنار آن افزایش نیاز به مسکن و سرعت گرفتن ساخت و ساز در کنار پیشرفت های همه جانبه علم و فن آوری، موجبات ایجاد نماهایی با مصالح و شیوه های اجرایی متنوع و گسترده شده است.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+در اجرای نمای ساختمان باید مراحل را به ترتیب و پشت سرهم از ابتدا تا انتها بر طبق اصول تعیین شده با توجه به نوع طرح و مصالح نمای ساختمان پیش برد. آماده سازی سطوح زیرکار و تمیزکردن سطح زیرین نما، به طوری که از هر نوع آلودگی هم چون گرد و خاک ، باقی مانده مصالح زیرین و ... تمیز  باشند، از مراحل مهم در اجرای نمای ساختمان به هر روشی و با هر مصالحی می باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+نماها از نظر مصالح زیرسازی به دو دسته نماهای ملاتی (دوغابی) و نماهای خشک (استفاده از اتصالات) تقسیم می شوند، و نیز از نظر مصالح روی کار دارای تنوع بسیار فراوان و شامل سنگ، سرامیک، آجر، چوب، شیشه، کامپوزیت و ... می باشند، که طراح باید با توجه به عوامل جانبی طرح خود از مناسب ترین آن ها استفاده کند. لازم به ذکر است که در این میان بعضی از انواع مصالح دارای برتری های چشمگیر نسبت به سایرین هستند که در ادامه به آن ها می پردازیم.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+استفاده از سنگ در نمای ساختمان یکی از رایج ترین و پرکاربردترین مصالح می باشد. به کار بردن سنگ در نماهای ساختمانی از دیرباز مورد توجه ایرانیان بوده و  امروزه نیز با توجه به تنوع انواع سنگ و از طرفی پیشرفت ابزارآلات استخراج، برش و صیقل دادن سنگ ها، استفاده از این مصالح رواج بیشتری یافته است. انواع متدوال سنگ  در نما ساختمان عبارتند از گرانیت، مرمریت، تراورتن و ... . لازم به ذکر است که امروزه سنگ های مصنوعی نیز در نماهای ساختمانی دارای طرفداران خود می باشند.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+استفاده از سرامیک امروزه در نماهای ساختمان با کاربری های مختلف، باعث ایجاد طرح های خلاقانه و متنوعی گشته است. در بین سرامیک های مورد استفاده ، امروزه استفاده از سرامیک پرسلانی به دلیل دوام و مقاومت بالا آن بسیار در نماهای ساختمانی دیده می شود.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                نماهای شیشه در انواع کرتین وال، نماهای دوپوسته، فریم لس ، با اوج گرفتن نماهای مدرن نیز رواج یافته و به ساختمان ها  ظاهری جدید و امروزی بخشیدند.
+کامپوزیت به دلیل هماهنگی با انواع شرایط آب و هوایی مورد استقبال سازندگان قرار گرفته است. نمای کامپوزیت از ترکیب دو لایه پوششی آلومینیوم و یک هسته پلی اتیلن تولید می‌شود.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+چوب در کارهای ساختمانی و در نمای سلختمان دارای کاربرد فراوان می باشد. در گذشته به علت محدودیت تکنولوژی استفاده از این متریال در بعضی از اقلیم ها با توجه به شرایط آب و هوایی رایج بود، اما امروزه با تولید انواع چوب هایی که از نظر خواص مکانیکی و شیمیایی  تغییرات فراوان داشته اند هم چون ترموودها ، جز مصالحی به شمار می رود که قابلیت استفاده در تمام اقلیم ها را دارا می باشند
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+آجر از مصالحی می باشد که از قدیم مورد توجه  سازندگان بوده است، که امروزه با پیشرفت تکنولوژی تغییرات زیادی کرده است. آجرهای امروزی دارای خصوصیاتی هم چون مقاوم بودن در برابر 
+آتش (آجرهای نسوز) ، تنوع در رنگ های ظاهری و ... تولید می شوند.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+یکی دیگر از مصالح پرکاربرد و در عین حال مقاوم در نماها که امروزه مورد توجه سازندگان بناها قرار گرفته سیمان می باشد، که امروزه دارای رنگ های مختلفی نیز می باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">مزایا و معایب انواع مصالح</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">با توجه به خصوصیات فیزیکی و شیمیایی</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+        <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+انواع مصالح با توجه به خصوصیات فیزیکی و شیمیایی دارای مزایا و معایبی برای استفاده در نما می باشند که به طور مختصر به برخی از آن ها می پردازیم.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">ردیف</th>
+                      <th scope="col">متریال نما</th>
+                      <th scope="col">مزایا</th>
+                      <th scope="col">معایب</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>سنگ</td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">قابلیت اجرا هم در روش دوغابی و هم در روش خشک</li>
+                                      <li class="text-justify my-2">قابلیت استفاده بر روی انواع سطوح</li>
+                                      <li class="text-justify my-2">مقاوم در برابر آتش سوزی</li>
+                                      <li class="text-justify my-2">عایق صوت و حرارت</li>
+                                      <li class="text-justify my-2">مقاوم در برابررطوبت ،تغییر رنگ و گرد و غبار</li>
+                                      <li class="text-justify my-2"> زیبایی و تنوع در رنگ و اندازه</li>
+                                      <li class="text-justify my-2">سهولت در بازسازی</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">هزینه اجرای بالا</li>
+                                      <li class="text-justify my-2">عدم چسبندگی مناسب  در روش دوغابی </li>
+                                      <li class="text-justify my-2">اجرا زمان بر در روش دوغابی</li>
+                                      <li class="text-justify my-2">ایجاد مشکل اجرا در ارتفاعات</li>
+                                      <li class="text-justify my-2">نیاز به نیروی کار ماهر</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row">2</th>
+                      <td>آجر</td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2"> دارای ضریب انتقال حرارت پایین و در نتیجه عملکرد مناسب به عنوان عایق حرارتی و برودتی</li>
+                                      <li class="text-justify my-2">قابلیت استفاده در هر دو روش ملاتی و خشک</li>
+                                      <li class="text-justify my-2">سرعت اجرا بالا در روش خشک</li>
+                                      <li class="text-justify my-2">حمایت از محیط زیست به دلیل داشتن ساختار طبیعی</li>
+                                      <li class="text-justify my-2">نسبتا مقرون به صرفه از نظر اقتصادی</li>
+                                      <li class="text-justify my-2">مقاوم در برابر آتش سوزی و حریق</li>
+                                      <li class="text-justify my-2">مقاوم در برابر تغییر رنگ</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">عایق صوت نبودن نمای آجر معمولی</li>
+                                      <li class="text-justify my-2">در مواردی که دارای درصد بالای خاک رس می باشند دوام و طول عمر کمتری دارند</li>
+                                      <li class="text-justify my-2">کم بودن تنوع طرح شکل</li>
+                                      <li class="text-justify my-2">جرم پذیر بودن</li>
+                                      <li class="text-justify my-2">هزینه بر بودن ترمیم و نگهداری </li>
+                                      <li class="text-justify my-2">عدم سرعت اجرا در روش ملاتی</li>
+                                      <li class="text-justify my-2">عدم مقاومت در برابر حوادث طبیعی</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row">3</th>
+                      <td>شیشه</td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">کاهش بار مرده</li>
+                                      <li class="text-justify my-2">سبک و قابل ترمیم</li>
+                                      <li class="text-justify my-2">سرعت در اجر</li>
+                                      <li class="text-justify my-2">دید وسیع</li>
+                                      <li class="text-justify my-2">عایق صوتی</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">عدم عایق حرارتی و برودتی </li>
+                                      <li class="text-justify my-2">مقاومت کم در برابر فشار </li>
+                                      <li class="text-justify my-2">اتلاف انرژی وافزایش مصرف انرژی</li>
+                                      <li class="text-justify my-2">نیاز به مرمت و تمیزی</li>
+                                      <li class="text-justify my-2">مقاوم نبودن در مقابل زلزله</li>
+                                      <li class="text-justify my-2">مقاوم نبودن در مقابل آتش</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row">4</th>
+                      <td>کامپوزیت</td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">استفاده در انواع شرایط آب و هوایی</li>
+                                      <li class="text-justify my-2">پیاده سازی در رنگ های متنوع</li>
+                                      <li class="text-justify my-2">انعطاف پذیری ورقها</li>
+                                      <li class="text-justify my-2">اجرای سریع</li>
+                                      <li class="text-justify my-2">طول عمر بالا</li>
+                                      <li class="text-justify my-2">عایق صوتی و حرارتی</li>
+                                      <li class="text-justify my-2">وزن کم</li>
+                                      <li class="text-justify my-2">تنوع رنگ</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">عدم مقاومت در برابر ضربه و فشار شدید</li>
+                                      <li class="text-justify my-2">عدم صرفه اقتصادی</li>
+                                      <li class="text-justify my-2">جرم پذیری نسبتا بالا </li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                    <th scope="row">5</th>
+                      <td>سیمان</td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">مقرون به صرفه</li>
+                                      <li class="text-justify my-2">سرعت اجرا بالا</li>
+                                      <li class="text-justify my-2">عایق رطوبتی</li>
+                                      <li class="text-justify my-2">ضد حریق</li>
+                                      <li class="text-justify my-2">مقاوم یخ زدگی</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">پوشش ضعیف عایق حرارتی  و برودتی</li>
+                                      <li class="text-justify my-2"> فاقد خاصیت آنتی استاتیک بودن</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                    <th scope="row">6</th>
+                      <td>چوب</td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">امکان برش و ایجاد مدل های قوس دار</li>
+                                      <li class="text-justify my-2">امکان نصب و جداسازی آسان</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">عدم مقاومت در برابر حرق</li>
+                                      <li class="text-justify my-2">مقاومت ضعیف در برابر ضربه </li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                    <th scope="row">7</th>
+                      <td>سرامیک</td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">عایق مناسب در برابر صوت ، حریق و رطوبت </li>
+                                      <li class="text-justify my-2"> قابل استفاده به هر دو روش ملاتی و خشک</li>
+                                      <li class="text-justify my-2">دارای رنگ و طرح های متنوع</li>
+                                      <li class="text-justify my-2">پایداری و استحکام مناسب</li>
+                                      <li class="text-justify my-2">کاهش وزن تا یک چهارم نمای سنگ طبیعی</li>
+                                      <li class="text-justify my-2">انعطاف پذیری در کاربرد و زیبایی</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">مشکل پیوستگی سرامیک و نما</li>
+                                      <li class="text-justify my-2">عایق نبودن در مقابل گرما و سرما </li>
+                                      <li class="text-justify my-2">غیرقابل کاربرد در مکان های شلوغ بدلیل </li>
+                                      <li class="text-justify my-2">بازتاب شدید نور</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <section class="triangle my-5">
+    </section>
+
+    <footer class="page-footer font-small mdb-color pt-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <div id="map-canvas"></div>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            {% comment %} <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a href="#!">Keil</a>
+            </p>
+            <p>
+              <a href="#!">Services</a>
+            </p>
+            <p>
+              <a href="#!">Company</a>
+            </p>
+            <p>
+              <a href="#!">Article</a>
+            </p> {% endcomment %}
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">لینک های معتبر</h5>
+            <p>
+              <a href="#!"></a>
+            </p>
+            <p>
+              <a href="#!">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!">Help</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">ارتباط با ما</h5>
+            <p>
+              <i class="fas fa-home mr-3 text-justify" style="direction:rtl"></i> تهران- محله مرزداران- بزرگراه جلال آل احمد- جنب پل آزمایش- کوچه مهدی اول- پلاک 53- واحد 12</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 93</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 99</p>
+            <p>
+              <i class="fas fa-comment mr-3"></i> +98 902 235 5595</p>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left">© 2020 Copyright:
+              <a href="https://gmail.com">
+                <strong>MobinRad</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

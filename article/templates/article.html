@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <title>ایران کیل</title>
+  <link rel="shortcut icon" href="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-qualitaetsbohrer.png" type="image/png">
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="https://kit.fontawesome.com/1574c3b1bc.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  {% load static %}
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+</head>
+
+<body onload="initialize()">
+
+    <nav class="menu-container">
+      <input type="checkbox" aria-label="Toggle menu" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="admin">
+              ورود
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a  href="{% url 'aboutus' %}">
+            درباره ی ما
+            </a>
+          </li>
+          <li>
+            <a  href="{% url 'article' %}">
+              مقاله ها
+            </a>
+          </li>
+          <li>
+            <a  href="">
+              سرویس ها
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'keil' %}">
+              سیستم ها
+            </a>
+          </li>
+          <li>
+            <a href="">
+              محصولات
+            </a>
+          </li>
+          <li>
+            <a href="../">
+              خانه
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="menu-logo">
+        <img src="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-befestigungstechnik.png" alt="Iran keil"/>
+      </a>
+    </nav>
+
+    
+    <div class="container">
+        <div class="row my-2">
+            <div class="col-lg-6 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'pictures/articleicon.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-justify" style="direction:rtl">نما ساختمان</h5>
+                        <p class="card-text text-justify" style="direction:rtl">نمای ساختمان از دیرباز به‌عنوان جز جدایی‌ناپذیر ساختمان‌سازی برای معماران حائز اهمیت بوده است...</p>
+                        <a href="first" class="btn btn-primary col">نمایش مقاله</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'pictures/articleicon.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-justify" style="direction:rtl">نما خشک</h5>
+                        <p class="card-text text-justify" style="direction:rtl">نماهای خشک امروزه از به روزترین روش های اجرای نما در صنعت ساختمان سازی میباشند ...</p>
+                        <a href="second" class="btn btn-primary col">نمایش مقاله</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-lg-6 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'pictures/articleicon.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-justify" style="direction:rtl">انواع نمای مصالح</h5>
+                        <p class="card-text text-justify" style="direction:rtl">مصالح نمای ساختمان به عنوان خارجی ترین سطح ساختمان حائز اهمیت می باشند.  ...</p>
+                        <a href="third" class="btn btn-primary col">نمایش مقاله</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'pictures/articleicon.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-justify" style="direction:rtl">نمای غیر نمایان</h5>
+                        <p class="card-text text-justify" style="direction:rtl">سیستم نماهای غیر نمایان جز امن ترین روش های اجرای نماهای ساختمانی می باشد که امروزه  ...</p>
+                        <a href="forth" class="btn btn-primary col">نمایش مقاله</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="row my-2">
+            <div class="col-lg-6 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'pictures/articleicon.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-justify" style="direction:rtl">نمای کیل</h5>
+                        <p class="card-text text-justify" style="direction:rtl">سیستم کیل یکی از روش‌های اجرای نما های غیرنمایان خشک می باشد. با توجه به مزایای سیستم کیل ...</p>
+                        <a href="fifth" class="btn btn-primary col">نمایش مقاله</a>
+                    </div>
+                </div>
+            </div>
+            {% comment %} <div class="col-lg-6 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static 'pictures/articleicon.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-justify" style="direction:rtl">نمای غیر نمایان</h5>
+                        <p class="card-text text-justify" style="direction:rtl">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary col">نمایش مقاله</a>
+                    </div>
+                </div>
+            </div> {% endcomment %}
+        </div>
+    </div>
+
+    <section class="triangle my-5">
+    </section>
+
+    <footer class="page-footer font-small mdb-color pt-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <div id="map-canvas"></div>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            {% comment %} <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a href="#!">Keil</a>
+            </p>
+            <p>
+              <a href="#!">Services</a>
+            </p>
+            <p>
+              <a href="#!">Company</a>
+            </p>
+            <p>
+              <a href="#!">Article</a>
+            </p> {% endcomment %}
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">لینک های معتبر</h5>
+            <p>
+              <a href="#!"></a>
+            </p>
+            <p>
+              <a href="#!">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!">Help</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">ارتباط با ما</h5>
+            <p>
+              <i class="fas fa-home mr-3 text-justify" style="direction:rtl"></i> تهران- محله مرزداران- بزرگراه جلال آل احمد- جنب پل آزمایش- کوچه مهدی اول- پلاک 53- واحد 12</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 93</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 99</p>
+            <p>
+              <i class="fas fa-comment mr-3"></i> +98 902 235 5595</p>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left">© 2020 Copyright:
+              <a href="https://gmail.com">
+                <strong>MobinRad</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

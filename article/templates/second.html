@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <title>ایران کیل</title>
+  <link rel="shortcut icon" href="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-qualitaetsbohrer.png" type="image/png">
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="https://kit.fontawesome.com/1574c3b1bc.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  {% load static %}
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+</head>
+
+<body onload="initialize()">
+
+    <nav class="menu-container">
+      <input type="checkbox" aria-label="Toggle menu" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="admin">
+              ورود
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a  href="{% url 'aboutus' %}">
+            درباره ی ما
+            </a>
+          </li>
+          <li>
+            <a  href="{% url 'article' %}">
+              مقاله ها
+            </a>
+          </li>
+          <li>
+            <a  href="">
+              سرویس ها
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'keil' %}">
+              سیستم ها
+            </a>
+          </li>
+          <li>
+            <a href="">
+              محصولات
+            </a>
+          </li>
+          <li>
+            <a href="../">
+              خانه
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="menu-logo">
+        <img src="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-befestigungstechnik.png" alt="Iran keil"/>
+      </a>
+    </nav>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+نماهای خشک امروزه از به روزترین روش های اجرای نما در صنعت ساختمان سازی میباشند. مزایای سیستم نماهای خشک و روش های اجرا این سیستم(غیرقابل مشاهده و قابل مشاهده) باعث ارجحیت این روش نسبت به دیگر روش ها گشته است.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">کلمات کلیدی</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">key words</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+نمای خشک – مزایا نمای خشک – روش اجرا نمای خشک – تعریف نمای خشک – روش اجرا کیل – نمای خشک چیست – انواع نمای خشک
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">گذری بر تعریف نماهای خشک</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">نمای خشک چیست</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+به‌طور عام و کل نمای خشک به نمایی گفته می‌شود که ملات دوغاب و ملات سیمان در آن استفاده‌نشده و از اجزای نما به‌طور کامل حذف می‌شود و در عوض از اتصالات مکانیکی جهت اتصال المان‌های مختلف به سطح نما استفاده می‌شود.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+برای اولین بار در دنیا، در دهه هفتاد میلادی معماران آمریکایی به دنبال راه‌حلی جهت ایجاد نمایی مقاوم در برابر  بلایای طبیعی  و اقلیم حادثه‌خیز سرزمین خود بوده که به اجرای نماهای خشک در آسمان‌خراش‌های و برج‌های بلندمرتبه دست یافتند.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+سیستم های نمای خشک از اواخر دهه هفتاد خورشیدی در ایران مورد استفاده قرار گرفته که در این مدت  دارای پیشرفت های فراوان  در تمام زمینه ها اعم از طراحی، اجرا و تولید بوده است..
+محدودیت‌های نماهای دوغابی و توسعه و مزایای فراوان سیستم های مختلف در اجرای  نمای خشک، معماران و طراحان را هرروزه بیشتر به سمت استفاده از این روش سوق می‌دهد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">نماهای خشک</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">انواع و مزایا</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+نما بدنه ای از کالبد سازه می باشد،و اولین جزء از ساختمان است که با مخاطب ارتباط برقرار می کند. اجرای نمای ساختمان به 2 روش ملاتی و خشک امکان پذیر می باشد. روش ملاتی روشی است که از ابتدا متداول بوده، ولی امروزه به دلیل معایب و مشکلات  روش دوغابی  و از طرفی پیشرفت تکنولوژی و ابداع سیستم های متنوع نمای خشک که دارای مزیت های فراوان می باشد، هر روزه به تعداد استفاده کنندگان از نماهای خشک افزوده می شود. تا قبل از ابداع این روش، مصالح نما را با ملات به بدنه اصلی ساختمان متصل می کردند که این روش  مشکلاتی همچون زحکت فراوان جهت نصب در ارتفاعات، عدم پایداری در مقابل نیروی باد و زلزله را در پی داشت که نتیجه سقوط قسمت هایی از نما و ایجاد خسارات جبران ناپذیر، عدم امکان استفاده از عایق حرارتی، افزایش پرت مصالح و ضایعات ساختمانی ، زمان اجرا طولانی و ... را موجب می گردیده است. اما به مرور با آشکار شدن برتری های نماهای خشک ، سازندگان  و معماران به سمت این روش سوق یافتند.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+نماهای خشک به‌طورکلی از نظر ظاهر نما که برای ببیننده قابل مشاهده است ، به دودسته کلی غیر نمایان invisible  و نمایان visible   دسته‌بندی می‌شوند و هر کدام به روش های متعددی اجرا می شوند.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+سیستم های نمای خشک به صورت غیر نمایان(invisible)  ، بست ها (قلاب ها) پس از نصب در نما قابل‌مشاهده نمی‌باشند و این نکته از نظر زیبایی بصری بسیار حائز اهمیت می باشد. تکنولوژی اتصالات این روش ساده و قابل استفاده در ابعاد بزرگ است  و امکان اجرای طرح های  پیچیده را با اجرای یک زیرسازی ساده و اصولی فراهم می کند. پس از ایجاد زیرسازی ، چیدمان پنل ها متناسب با طرح در فرم های متقارن یا نا متقارن صورت می گیرد .در این روش پیش از نصب باید تغییراتی بر روی سطح زیرین مصالح ایجاد شود که بسته به نوع روش می‌تواند سوراخ یا شیارهای درپشت و لبه های مصالح باشند.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+در نماهای  نمایان visible قسمتی از بست های (کلیپس های) مورداستفاده جهت نگه‌داشتن المان‌ها ( مصالح) از بیرون توسط مخاطب قابل‌مشاهده است و این موضوع را می توان یکی از بارزترین معایب آن ها روش برشمرد. این بست ها بر روی پروفیل‌های زیرسازی  به‌وسیله پیچ یا پرچ متصل شده و المان‌ها بر روی این‌ها سوار شده و از بالا و پایین توسط این کلیپس ها احاطه می‌شوند
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">فواید اجرای نمای خشک </h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">نمایان – غیر نمایان</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style="direction:rtl">
+        <div class='col my-2'>
+            <ul style="direction:rtl">
+              <li class="text-justify my-2">بهینه‌سازی در مصرف انرژی و کاهش اتلاف انرژی</li>
+              <li class="text-justify my-2">سبک سازی سازه به جهت پایداری بیشتر در برابر بلایای طبیعی</li>
+              <li class="text-justify my-2">سرعت اجرای  بالا و صرفه‌جویی در زمان پروژه</li>
+              <li class="text-justify my-2">قابلیت تنظیم میزان کاری در نمای ساختمان</li>
+              <li class="text-justify my-2">طراحی مهندسی خلاقانه</li>
+              <li class="text-justify my-2">کاهش هزینه بازسازی  وترمیم</li>
+              <li class="text-justify my-2">افزایش عمر نمای ساختمان</li>
+              <li class="text-justify my-2">امکان تلفیق با معماری سنتی</li>
+              <li class="text-justify my-2">برطرف کردن نا شاقولی‌های نما</li>
+              <li class="text-justify my-2">آسانی اجرا برای نماهای مرتفع </li>
+              <li class="text-justify my-2">تعویض آسان و سریع تایل ها</li>
+              <li class="text-justify my-2">عدم نیاز به سطح زیرین یکپارچه و به‌هم‌پیوسته</li>
+              <li class="text-justify my-2">افزایش ایمنی در حین اجرا و در دوره نگهداری آن</li>
+              <li class="text-justify my-2">تولید صنعتی مصالح و درنتیجه کم شدن هزینه‌ها و  مقرون‌به‌صرفه بودن</li>
+              <li class="text-justify my-2">قابلیت بازیافت مصالح و کاهش حجم ضایعات ساختمانی و درنتیجه کاهش پرت مصالح</li>
+              <li class="text-justify my-2">مقاوم در برابر حریق و هم‌چنین  در برابر تنش‌های محیطی و اقلیمی (بادهای شدید، طوفان و زمین‌لرزه)</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">مراحل اجرای یک سیستم نمای خشک</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem"></h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+در نماهای خشک به‌جای ملات از تجهیزات فلزی مانند ریل و اتصالات آلومینیومی  استفاده می‌شود. درواقع دیوار پرده ایی مانندی است که در فاصله جلوتر از دیوار باربر نصب می‌شود و باعث ایجاد نمایی دوپوسته می‌شود. همین ایجاد فاصله باعث ایجاد یکسری مزایا مثل کمک به بهینه‌سازی مصرف انرژی در این روش می‌شود.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+نماهای خشک به روش‌های کیل(keil)، شیاری (شیار از پشت _ شیار از لبه)، ترک (کلیپسی) و  پیمی اجرا می‌شوند، که روش‌های اجرای هرکدام به‌طور خلاصه در جدول زیر مورد بررسی قرار می‌دهیم:
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">ردیف</th>
+                      <th scope="col">دسته بندی سیستم</th>
+                      <th scope="col">نام سیستم</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>غیرنمایان</td>
+                      <td>کیل</td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">نقشه ‌برداری از نما و تهیه نقشه‌ های shopdrawing</li>
+                                      <li class="text-justify my-2">اجرای زیرسازی آهنی عمودی و افقی     </li>
+                                      <li class="text-justify my-2">نصب پروفیل‌های آلومینیومی</li>
+                                      <li class="text-justify my-2">اجرای سوراخ‌کاری</li>
+                                      <li class="text-justify my-2">نصب انکر در سنگ و نصب سنگ بروی اتصالات</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row">2</th>
+                      <td>غیرنمایان</td>
+                      <td>پیمی</td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">نقشه ‌برداری از نما و تهیه نقشه‌ های shopdrawing</li>
+                                      <li class="text-justify my-2">اجرای زیرسازی آهنی عمودی و افقی     </li>
+                                      <li class="text-justify my-2">اجرای زیرسازی نبشی</li>
+                                      <li class="text-justify my-2">سوراخ‌کاری سنگ </li>
+                                      <li class="text-justify my-2">نصب اسکوپ و سنگ</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row">3</th>
+                      <td>نمایان</td>
+                      <td>ترک</td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">نقشه ‌برداری از نما و تهیه نقشه‌ های shopdrawing</li>
+                                      <li class="text-justify my-2">اجرای زیرسازی آهنی عمودی و افقی     </li>
+                                      <li class="text-justify my-2">اجرای زیرسازی نبشی</li>
+                                      <li class="text-justify my-2">نصب اسکوپ و سنگ</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row">4</th>
+                      <td>غیرنمایان</td>
+                      <td>شیاری (شیار از پشت)</td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">نقشه ‌برداری از نما و تهیه نقشه‌ های shopdrawing</li>
+                                      <li class="text-justify my-2">اجرای زیرسازی آهنی                 </li>
+                                      <li class="text-justify my-2">نصب براکت های آلومینیومی طبق نقشه</li>
+                                      <li class="text-justify my-2">نصب پروفیل های  fix افقی طبق نقشه</li>
+                                      <li class="text-justify my-2">اجرای شیار 2طرفع45درجه پشت سرامیک در محل هایی که کلیپس داخل آن قرار می گیرد.</li>
+                                      <li class="text-justify my-2">نصب کلیپس های آلومینیومی     </li>
+                                      <li class="text-justify my-2">نصب سرامیک روی پروفیل های آلومینیومی افقی</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                    <th scope="row">5</th>
+                      <td>غیرنمایان</td>
+                      <td> شیاری(شیار از لبه)</td>
+                      <td>
+                            <div class="container">
+                              <div class="row" style="direction:rtl">
+                                <div class='col my-2'>
+                                    <ul style="direction:rtl">
+                                      <li class="text-justify my-2">نقشه ‌برداری از نما و تهیه نقشه‌ های shopdrawing</li>
+                                      <li class="text-justify my-2">اجرای زیرسازی آهنی عمودی     </li>
+                                      <li class="text-justify my-2">اجرای زیرسازی نبشی</li>
+                                      <li class="text-justify my-2">اجرای شیار سنگ </li>
+                                      <li class="text-justify my-2">    نصب اسکوپ و سنگ</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row" style="direction:rtl">
+        <div class='col my-2'>
+        <p class="text-justify my-2">
+        انتخاب صحیح و اصولی این اجزا و منطبق بودن کامل روش های اجرایی نماهای خشک  با استاندارد های تعیین شده از اهمیت بالایی در کیفیت  نهایی طرح ارائه شده دارد.به طور کلی اجزای نمای خشک شامل موارد زیر می‌باشد
+        </p>
+        <ul style="direction:rtl">
+          <li class="text-justify my-2">چارچوب‌های  نگه‌دارنده ( با توجه به نوع اتصالات و مصالح مورد استفاده باید در ابعاد و اندازه های صحیح مورد استفاده قرار می‌گیرد.)</li>
+          <li class="text-justify my-2">فضای خالی تهویه ( مؤثر در بهینه سازی مصرف انرژی و جلوگیری از اتلاف انرژی)</li>
+          <li class="text-justify my-2">عایق حرارتی ( اتصالات مکانیکی یا چسب به زیر کار محکم می‌شود)</li>
+          <li class="text-justify my-2">مصالح نما ( انواع سنگ ها و سرامیک ها _ شیشه _ ورق های  آلومینیوم_ آجر _ چوب و ...)</li>
+          <li class="text-justify my-2">اتصالات ( در مورد اتصالات باید نهایت دقت را داشت و کاملاً از اتصالات استاندارد استفاده نمود، تا به نتیجه نهایی مطلوب دست یافت.)</li>
+        </ul>
+
+        </div>
+      </div>
+    </div>
+    
+    <section class="triangle my-5">
+    </section>
+
+    <footer class="page-footer font-small mdb-color pt-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <div id="map-canvas"></div>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            {% comment %} <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a href="#!">Keil</a>
+            </p>
+            <p>
+              <a href="#!">Services</a>
+            </p>
+            <p>
+              <a href="#!">Company</a>
+            </p>
+            <p>
+              <a href="#!">Article</a>
+            </p> {% endcomment %}
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">لینک های معتبر</h5>
+            <p>
+              <a href="#!"></a>
+            </p>
+            <p>
+              <a href="#!">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!">Help</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">ارتباط با ما</h5>
+            <p>
+              <i class="fas fa-home mr-3 text-justify" style="direction:rtl"></i> تهران- محله مرزداران- بزرگراه جلال آل احمد- جنب پل آزمایش- کوچه مهدی اول- پلاک 53- واحد 12</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 93</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 99</p>
+            <p>
+              <i class="fas fa-comment mr-3"></i> +98 902 235 5595</p>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left">© 2020 Copyright:
+              <a href="https://gmail.com">
+                <strong>MobinRad</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

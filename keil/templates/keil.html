@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <title>ایران کیل</title>
+  <link rel="shortcut icon" href="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-qualitaetsbohrer.png" type="image/png">
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="https://kit.fontawesome.com/1574c3b1bc.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  {% load static %}
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+</head>
+
+<body onload="initialize()">
+
+    <nav class="menu-container">
+      <input type="checkbox" aria-label="Toggle menu" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="admin">
+              ورود
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a  href="{% url 'aboutus' %}">
+            درباره ی ما
+            </a>
+          </li>
+          <li>
+            <a  href="{% url 'article' %}">
+              مقاله ها
+            </a>
+          </li>
+          <li>
+            <a  href="">
+              سرویس ها
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'keil' %}">
+              سیستم ها
+            </a>
+          </li>
+          <li>
+            <a href="">
+              محصولات
+            </a>
+          </li>
+          <li>
+            <a href="../">
+              خانه
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="menu-logo">
+        <img src="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-befestigungstechnik.png" alt="Iran keil"/>
+      </a>
+    </nav>
+
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <h1>تکنولوژی کیل</h1>
+        </div>
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+تکنولوژی آندرکات کیل یک تکنیک منحصر به فرد است که در عین سادگی، راه حلی خلاقانه جهت پنهان نمودن اتصالات نصب پشت پنل ها ارائه کرده است.
+در این سیستم با استفاده از روشی مدرن در حفاری، یک حفره مسدود با یک پایه خزینه شده در انتها، در قسمت داخلی پنل های نمای سازه ایجاد می شود. سپس با استفاده از انکرهای آندرکات ، براکت مخصوص سیستم به پنل متصل      می گردد.
+                </p>
+            </div>
+        </div>
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+در این سیستم با استفاده از روشی مدرن در حفاری، یک حفره مسدود با یک پایه خزینه شده در انتها، در قسمت داخلی پنل های نمای سازه ایجاد می شود. سپس با استفاده از انکرهای آندرکات ، براکت مخصوص سیستم به پنل متصل      می گردد.  
+                </p>
+            </div>
+        </div>
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+این انکرها به نحوی طراحی شده اند که پیش از قفل شدن با اتصالات، استحکام پنل آماده سازی شده را در برابر  هرگونه اتفاق غیرمنتظره ( به استثناء ضربه مستقیم) تضمین می نماید. پس از تجهیز کامل پنل ها ، می توانیم آن ها را   مستقیما بر روی زیرسازی از قبل آماده شده متصل می نمائیم.
+                </p>
+            </div>
+        </div>
+        <div class="row" style="direction:rtl">
+            <h1>دریل نمودن کیل</h1>
+        </div>
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                با توجه به قابلیت دستگاه دریل آندرکات و میز مخصوص آن ، امکان حفاری سطوح پنل های مختلف بصورت اتوماسیون وجود دارد. برای این مرحله از کار ، هر سوراخ در زمانی کمتر از 10 ثانیه حفاری می شود.
+بدون توجه به اندازه و سایز پنل ها، امکان حفاری های دقیق و شکل های متقارن امکان پذیر می باشد.
+                </p>
+            </div>
+        </div>
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                جهت حفاری و ایجاد یک سوراخ با قطر 7 میلیمتر ( مناسب جدید انکرهایی با قطر 6 میلیمتر) می بایست                 قطر خزینه سوراخ 9 میلیمتر ایجاد گردد. 
+                </p>
+            </div>
+        </div>
+        <div class="row" style="direction:rtl">
+            <h1>انکر آندرکات کیل</h1>
+        </div>
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                در سیستم کیل جهت اتصال  پنهان پنل های مختلف از انکر آندرکات  با جنس استنلس استیل که قابلیت ضدزنگ بودن در شرایط جوی مرطوب را دارد، استفاده می شود
+                </p>
+            </div>
+        </div>
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                هندسه انکر آندرکات کاملا منطبق با سوراخ دریل شده آندرکات می باشد. این ویژگی باعث می شود که پنل از هرگونه فشار ناشی از انبساط در امان باشد و همواره سیستم کیل جهت استفاده در پنل هایی با ضخامت بالاتر از 7میلیمتر توصیه می شود.
+                </p>
+            </div>
+        </div>
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+                انکر آندرکات کیل برای استفاده بهتر در پنل هایی از جنس و سایز متفاوت، دارای سایزهای نزدیک به هم می باشد     که این ویژگی باعث می شود هر پنل با ضخامت بالاتر از 7میلیمتر قابل استفاده باشد.
+انکرهای آندرکات کیل مزایای قابل توجهی دارند که مهم ترین آن ایمنی بالای مونتاژ می باشد. 
+مونتاژ کردن و کنترل نمودن جابه جایی خزینه های حفاری شده در تمام پنل ها با ضخامت های متغیر بسرعت و آسانی و با ایمنی بالا به کمک سیستم کیل و اتصالات انکر آندرکات، پیچ کیل، براکت و پنل انجام می پذیرد.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style="direction:rtl">
+        <div class='col my-2'>
+        <p class="text-justify my-2">
+                جهت رعایت ایمنی سیستم کیل دقت در نحوه بسته شدن 2 جزء پیچ و انکر آندرکات بسیار مهم است.
+در صورت اطمینان از نحوه بسته شدن پیچ و انکر آندرکات به پنل شما با یک اتصال منحصر به فرد مواجه هستند        که در موارد مختلف می توانید از آن استفاده نمایید:
+        </p>
+        <ul style="direction:rtl">
+          <li class="text-justify my-2">طراحی خلاقانه و بدون محدودیت برای نماهای مدرن و سنتی</li>
+          <li class="text-justify my-2">ایمنی بالا در مقابل بلایای طبیعی و شرایط جوی</li>
+          <li class="text-justify my-2">نمای زیبا و عاری از آلودگی بصری ناشی از اتصالات اضافه بر پوشش نما</li>
+          <li class="text-justify my-2">نصب سریع و آسان در مقایسه با نماهای سنتی (ملاتی)</li>
+          <li class="text-justify my-2">قابلیت اجرا در سایزهای بزرگ</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">سیستم کیل</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">مرور کلی بر سیستم های کیل</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style="direction:rtl">
+        <div class='col my-2'>
+        <p class="text-justify my-2">
+                جهت رعایت ایمنی سیستم کیل دقت در نحوه بسته شدن 2 جزء پیچ و انکر آندرکات بسیار مهم است.
+در صورت اطمینان از نحوه بسته شدن پیچ و انکر آندرکات به پنل شما با یک اتصال منحصر به فرد مواجه هستند        که در موارد مختلف می توانید از آن استفاده نمایید:
+        </p>
+        <ul style="direction:rtl">
+          <li class="text-justify my-2">	در سیستم کیل حفاری استوانه ای در زیرسازی مخروطی در فرآیندی یک مرحله ای و تنها با یک ابزار       انجام می پذیرد.</li>
+          <li class="text-justify my-2">	با توجه به طراحی حرفه ای میز و دستگاه دریل آندرکات کیل، حفاری بر روی سطوح مختلف پنل ها بصورت اتوماسیون امکان پذیر است</li>
+          <li class="text-justify my-2">	جهت حفاری هر سوراخ در سیستم کیل، برای هر سرامیک به زمانی کمتر از یک دقیقه نیاز است.</li>
+          <li class="text-justify my-2">	برای نصب هر پنل می بایست از انکر کیل مناسب بر اساس وزن، اندازه و جنس آن  پنل استفاده نمود.</li>
+          <li class="text-justify my-2">	برای مونتاز در سیستم کیل، یک انکر آندرکات کیل به داخل  سوراخ ایجاد شده اضافه می شود و توسط        پیچ بطور کامل قفل می گردد.</li>
+          <li class="text-justify my-2">	در سیستم کیل ، مونتاژ انکر آندرکات بسیار سریع، ایمن و ساده می باشد</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style="direction:rtl">
+        <div class='col-md-6 col-lg-3 my-2 border border-danger rounded'>
+            <img src="https://keil-fixing.de/fileadmin/_processed_/0/7/csm_vlcsnap-2018-06-22-09h33m11s541-800x800_21a4df13c2.jpg" alt="Flowers in Chania" width="250" height="250">
+        </div>
+        <div class='col-md-6 col-lg-3 my-2 border border-danger rounded'>
+            <img src="https://keil-fixing.de/fileadmin/_processed_/5/4/csm_vlcsnap-2018-06-22-09h33m18s937-800x800_7e4165e64e.jpg" alt="Flowers in Chania" width="250" height="250">
+        </div>
+        <div class='col-md-6 col-lg-3 my-2 border border-danger rounded'>
+            <img src="https://keil-fixing.de/fileadmin/_processed_/0/3/csm_vlcsnap-2018-06-22-09h33m44s604-800x800_bf66f6bf42.jpg" alt="Flowers in Chania" width="250" height="250">
+        </div>
+        <div class='col-md-6 col-lg-3 my-2 border border-danger rounded'>
+            <img src="https://keil-fixing.de/fileadmin/_processed_/5/d/csm_vlcsnap-2018-06-22-09h34m51s695-800x800_95bd842d66.jpg" alt="Flowers in Chania" width="250" height="250">
+        </div>
+      </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">سیستم کیل</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">مزیت سیستم کیل</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style="direction:rtl">
+        <div class='col my-2'>
+        <p class="text-justify my-2">
+        </p>
+        <ul style="direction:rtl">
+          <li class="text-justify my-2">	کیفیت ایمنی </li>
+          <li class="text-justify my-2">	سیستم کیل با توجه به دریافت بیشترین تاییدیه های مصوبات فنی اروپا ETA در زمینه اتصال پانل های نما از بالاترین مراتب ایمنی برخوردار است.</li>
+          <li class="text-justify my-2">	انکر های آندرکات از مواد اولیه استیل 304 و یا 316 تولید می شوند که همین موضوع کیفیت بالای محصول را تضمین می نماید.</li>
+          <li class="text-justify my-2">	در اقصی نقاط دنیا، مهندسین ناظر نمای استفاده شده از سیستم کیل را مورد تایید قرار دادند.</li>
+          <li class="text-justify my-2">	با توجه به ویژگی های غیر قابل احتراق بودن، مکانیکی بودن و مقاومت بالا در برابر آزمون های برشی، انکرهای آندرکات ایمنی کامل جهت نگهداری پنل ها را تضمین می نمایند.</li>
+          <li class="text-justify my-2">	انکر های آندرکات کیل قابلیت تحمل کلیه پنل های نصبی با هرضخامت، ابعاد و وزن را جهت تنوع در سایز و استحکام مهندسی شده را دارند. </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style="direction:rtl">
+        <div class='col-6 my-2'>
+            <img src="https://keil-fixing.de/fileadmin/_processed_/b/f/csm_DD_Befest_Info_2_002-bearb_003de7a1cc.jpg" alt="Flowers in Chania" width="250" height="250">
+        </div>
+        <div class='col-6 my-2'>
+            <img src="https://keil-fixing.de/fileadmin/_processed_/4/6/csm_csm_DD_Befest_Info_4_001-en_394f2f2efd.jpg" alt="Flowers in Chania" width="250" height="250">
+        </div>
+      </div>
+    </div>
+
+    <section class="triangle my-5">
+    </section>
+
+    <footer class="page-footer font-small mdb-color pt-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <div id="map-canvas"></div>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            {% comment %} <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a href="#!">Keil</a>
+            </p>
+            <p>
+              <a href="#!">Services</a>
+            </p>
+            <p>
+              <a href="#!">Company</a>
+            </p>
+            <p>
+              <a href="#!">Article</a>
+            </p> {% endcomment %}
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">لینک های معتبر</h5>
+            <p>
+              <a href="#!"></a>
+            </p>
+            <p>
+              <a href="#!">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!">Help</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">ارتباط با ما</h5>
+            <p>
+              <i class="fas fa-home mr-3 text-justify" style="direction:rtl"></i> تهران- محله مرزداران- بزرگراه جلال آل احمد- جنب پل آزمایش- کوچه مهدی اول- پلاک 53- واحد 12</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 93</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 99</p>
+            <p>
+              <i class="fas fa-comment mr-3"></i> +98 902 235 5595</p>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left">© 2020 Copyright:
+              <a href="https://gmail.com">
+                <strong>MobinRad</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>

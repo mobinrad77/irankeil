@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <title>ایران کیل</title>
+  <link rel="shortcut icon" href="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-qualitaetsbohrer.png" type="image/png">
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="https://kit.fontawesome.com/1574c3b1bc.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  {% load static %}
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+</head>
+
+<body onload="initialize()">
+
+    <nav class="menu-container">
+      <input type="checkbox" aria-label="Toggle menu" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="admin">
+              ورود
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a  href="{% url 'aboutus' %}">
+            درباره ی ما
+            </a>
+          </li>
+          <li>
+            <a  href="{% url 'article' %}">
+              مقاله ها
+            </a>
+          </li>
+          <li>
+            <a  href="">
+              سرویس ها
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'keil' %}">
+              سیستم ها
+            </a>
+          </li>
+          <li>
+            <a href="">
+              محصولات
+            </a>
+          </li>
+          <li>
+            <a href="../">
+              خانه
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="menu-logo">
+        <img src="https://keil-fixing.de/fileadmin/template/IMG/logo-keil-befestigungstechnik.png" alt="Iran keil"/>
+      </a>
+    </nav>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+سیستم کیل یکی از روش‌های اجرای نما های غیرنمایان خشک می باشد. با توجه به مزایای سیستم کیل امروزه در سراسر دنیا مورد استفاده طراحان و معماران قرارگرفته است.سیستم کیل یکی از امن ترین روش های اجرای نما می باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">کلمات کلیدی</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">key words</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+سیستم کیل- روش کیل- نمای کیل- ابزارآلات کیل- مزایای سیستم کیل. تعریف روش کیل
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">سیستم کیل</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem">تعریف  سیستم کیل</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+سیستم کیل در نمای ساختمان جزء سیستم های غیر نمایان از زیر مجموعه های نماهای خشک ساختمانی می باشد که اولین بار در دنیا توسط شرکت keil  آلمان به اجرا درآمده است. کاربرد سیستم کیل هم در نما و هم در سطوح داخلی ساختمان ها  و مزایای فراوان آن باعث گردیده که امروزه مورد توجه بسیاری از طراحان و معماران قرار گیرد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+در سیستم کیل مصالح توسط اتصالات فلزی مخفی و بدون نیاز به چسب برای پوشاندن سطوح به کار می روند. در این روش با استفاده از تکنیک undercut  حفره هایی در پشت تایل ها ایجاد کرده  و تایل ها را بر روی زیرسازی های از قبل آماده شده جاگذاری می کنند که در ادامه به طور کامل به شرح تمام مراحل این سیستم به همراه جزییات دقیق آن می پردازیم.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">مراحل اجرا و مزایای سیستم کیل</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem"></h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+این تکنیک بسیار ساده و به همان اندازه مبتکرانه است. سیستم کیل به عنوان یک راه حل همه جانبه برای اجرای نماهای خشک ساختمان به کار می رود. با کمک سیستم کیل می توان پوسته های سطح نما را به سطحی زیبا و جذاب تبدیل نمود.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+پشت هر تایل سرامیکی با استفاده دریل و مته undercut مخصوص، 4 سوراخ کور با پایه منبسط که از زیر خزینه شده اند، ایجاد شده و سپس انکر زیرجلدی را داخل سوراخ جاگذاری و قلاب های آلومینیومی  (Agraffe) متناسب با ریل های افقی سازه توسط انکرها  به پشت سرامیک بسته می شوند. این چفت و بست انکر عاری از هرگونه نیروی انبساط و انقباض بوده و قفل بودن آن را تضمین کرده است. اکنون مصالح آماده جاگذاری را بر روی زیرسازی آلومینیومی از پیش آماده شده، که به صورت قوطی هایی عمودی و ریل های افقی بر روی زیرسازی می باشد، نصب می شوند. پس از قرار گیری مصالح بر روی ریل های افقی، در صورت وجود اندک ناترازی، توسط پیچ های رگلاژ روی قلاب های بالایی تایل ها،  تراز و فیکس می شوند. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">مراحل</th>
+                      <th scope="col">نام مرحله</th>
+                      <th scope="col">تصویر</th>
+                      <th scope="col">توضیحات</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>حفاری (Drilling)</td>
+                      <td>
+                        <div class='col-md-6 col-lg-3 my-2 rounded'>
+                            <img src="https://keil-fixing.de/fileadmin/_processed_/0/7/csm_vlcsnap-2018-06-22-09h33m11s541-800x800_21a4df13c2.jpg" alt="Flowers in Chania" width="250" height="250">
+                        </div>
+                      </td>
+                      <td>
+ایجاد حفره استوانه ای و زیر سازی مخروطی در یک فرآیند واحد و تنها با یک ابزار انجام می شود.
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>   خزینه دار کردن (Undercutting)</td>
+                      <td>
+                        <div class='col-md-6 col-lg-3 my-2  rounded'>
+                            <img src="https://keil-fixing.de/fileadmin/_processed_/5/4/csm_vlcsnap-2018-06-22-09h33m18s937-800x800_7e4165e64e.jpg" alt="Flowers in Chania" width="250" height="250">
+                        </div>
+                      </td>
+                      <td>
+ایجاد یک خزینه
+(خزینه ایجاد شده حدودا 2 میلی متر بزرگتر از سایز انکر مورد استفاده می باشد و  زمان حفاری برای سرامیک کمتر از 10 ثانیه است.)
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">3</th>
+                      <td> مونتاژ (Assembly)</td>
+                      <td>
+                        <div class='col-md-6 col-lg-3 my-2 rounded'>
+                            <img src="https://keil-fixing.de/fileadmin/_processed_/0/3/csm_vlcsnap-2018-06-22-09h33m44s604-800x800_bf66f6bf42.jpg" alt="Flowers in Chania" width="250" height="250">
+                        </div>
+                      </td>
+                      <td>
+برای مونتاژ ، یک انکر زیر جلدی  داخل سوراخ وارد می شود و توسط پیچ به طور مثبت قفل می شود
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>اتمام مونتاژ (Finished Assembly )</td>
+                      <td>
+                        <div class='col-md-6 col-lg-3 my-2  rounded'>
+                            <img src="https://keil-fixing.de/fileadmin/_processed_/5/d/csm_vlcsnap-2018-06-22-09h34m51s695-800x800_95bd842d66.jpg" alt="Flowers in Chania" width="250" height="250">
+                        </div>
+                      </td>
+                      <td>
+جاگذاری قلاب (Agraffe ) و چفت و بست کردن پیچ بالایی
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style="direction:rtl">
+        <div class='col my-2'>
+        <p class="text-justify my-2">
+        سیستم کیل  با داشتن ETA اتحادیه اروپا دارای سطح بالای کیفیت و امنیت  و دارای مزایای فراوان در تمام مراحل اعم از طراحی، اجرا و نگهداری می باشد که عبارتند از :
+        </p>
+        <ul style="direction:rtl">
+          <li class="text-justify my-2">طراحی خلاقانه و بدون محدودیت برای نماهای مدرن و سنتی</li>
+          <li class="text-justify my-2">قابلیت نصب بیش از 50 نوع متریال</li>
+          <li class="text-justify my-2">امکان تلفیق متریال ها در اشکال و سایز های مختلف</li>
+          <li class="text-justify my-2">نمای زیبا و عاری از آلودگی بصری ناشی از اتصالات اضافه بر پوشش نما</li>
+          <li class="text-justify my-2">ایمنی بالا در مقابل بلایای طبیعی</li>
+          <li class="text-justify my-2">عایق کاری حرارتی و برودتی</li>
+          <li class="text-justify my-2">ایمنی در برابر حریق</li>
+          <li class="text-justify my-2">صرفه جویی در مصرف انرژی</li>
+          <li class="text-justify my-2">مقاومت بالا در شرایط جوی سخت</li>
+          <li class="text-justify my-2">قابلیت اجرا در سایزهای بزرگ</li>
+          <li class="text-justify my-2">نصب سریع و آسان در مقایسه با نماهای سنتی (ملاتی) </li>
+          <li class="text-justify my-2">طول عمر زیاد و هزینه تعمیر و نگهداری کم</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-2 main-title">
+      <div class="my-2">
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h2 class="" style="color:white; margin:1rem">ابزارآلات و اتصالات مورد استفاده در سیستم کیل</h2>
+            </div>
+          </div>
+          <div class="container my-2">
+            <div class="row" style="direction:rtl">
+              <h4 class="" style="color:red; margin:1rem"></h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+مصالح مورد استفاده در سیستم کیل را در 3دسته کلی اتصالات ، ابزارآلات و قطعات یدکی می باشد.
+اتصالات سیستم کیل شامل انکرها، پیچ و واشرها، پروفیل ها و قلاب ها ، براکت ها و ضربه گیر ها می باشند.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+انکرها در انواع KRA01-KRA02  و KRA03  و با سایزهای5 ، 7، 9، 12 و 15و قطر 6 میلی متر برای استفاده در سنگ طبیعی، سنگ مصنوعی، سنگ ساخته شده ،سرامیک ورقه ورقه (HPL)، مواد مصنوعی سیمان ، الیاف بتن مسلح با فیبر شیشه ای (GFRC)، سرامیک های شیشه ای مواد سطح جامد بتن فوق العاده با کارایی بالا (UHPC) مورد استفاده قرار می گیرند.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+پیچ ها و واشرها شامل واشرها 15*6 ، پیچ سرمته و پیچ آچاری می شوند، که پیچ های آچار خور در پنج سایز 10*6 ، 12*6، 14*6 ، 16*6 و 18*6 مورد استفاده قرار می گیرند.
+پروفیل های آلومینیومی که در دو دسته پروفیل آلومینیومی   C20  و C30  موجود می باشد .
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+قلاب های آلومینیومی در دو گروه قلاویز شده و بدون قلاویز در دو سایز کلی C22  و C30 در سیستم کیل مورد استفاده قرار می گیرند.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="direction:rtl">
+            <div class='col my-2'>
+                <p class="text-justify my-2">
+ابزارآلات مورد استفاده در سیستم نماهای کیل دریل ها و مته ها می باشند. دریل های موجود در بازار ایران jr 1042  و jr1046  با میز و بدون میز و همچنین مته ها در چهار سایز 2/7، 9، 11 و 13 مورد استفاده قرار می گیرد. استفاده از آب  در هنگام دریل کاری علاوه بر افزایش کارایی و طول عمر مته ها باعث حفاظت آن ها در برابر خوردگی نیز می شود. سرعت چرخش مته ها حدود 7000 دور در دقیقه و فشار آب حدود 4بار می باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <section class="triangle my-5">
+    </section>
+
+    <footer class="page-footer font-small mdb-color pt-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <div id="map-canvas"></div>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            {% comment %} <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a href="#!">Keil</a>
+            </p>
+            <p>
+              <a href="#!">Services</a>
+            </p>
+            <p>
+              <a href="#!">Company</a>
+            </p>
+            <p>
+              <a href="#!">Article</a>
+            </p> {% endcomment %}
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">لینک های معتبر</h5>
+            <p>
+              <a href="#!"></a>
+            </p>
+            <p>
+              <a href="#!">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!">Help</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4" style="color:red;">ارتباط با ما</h5>
+            <p>
+              <i class="fas fa-home mr-3 text-justify" style="direction:rtl"></i> تهران- محله مرزداران- بزرگراه جلال آل احمد- جنب پل آزمایش- کوچه مهدی اول- پلاک 53- واحد 12</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 93</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 98 882 809 99</p>
+            <p>
+              <i class="fas fa-comment mr-3"></i> +98 902 235 5595</p>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left">© 2020 Copyright:
+              <a href="https://gmail.com">
+                <strong>MobinRad</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
